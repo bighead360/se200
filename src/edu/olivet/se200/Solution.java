@@ -5,10 +5,10 @@ import java.util.HashSet;
 
 
 /**
- * Created by jerrysun on 4/6/16.
+ * Created by Jerry Sun on 4/6/16.
  */
-public class Solution {
-    public static boolean isAnagram(String s, String t) {
+class Solution {
+    static boolean isAnagram(String s, String t) {
         if(s.length() != t.length()){
             return false;
         }
@@ -23,11 +23,11 @@ public class Solution {
 
     }
 
-    public static boolean containsDuplicate(int[] nums) {
+    static boolean containsDuplicate(int[] nums) {
         if(nums==null || nums.length==0)
             return false;
 
-        HashSet<Integer> set = new HashSet<Integer>();
+        HashSet<Integer> set = new HashSet<>();
         for(int item: nums){
             if(!set.add(item)){
                 return true;
@@ -40,3 +40,6 @@ public class Solution {
 
 
 }
+/**
+ * test
+ */
